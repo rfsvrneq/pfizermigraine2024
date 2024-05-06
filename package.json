@@ -3,15 +3,18 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "dev": "nuxt dev --dotenv .env.local",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "generate": "nuxt generate --dotenv .env.prod",
+    "generate:dev": "nuxt generate --dotenv .env.dev"
   },
   "dependencies": {
     "nuxt": "^3.7.4",
     "vue": "^3.3.4",
     "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "^1.2.0"
   }
 }

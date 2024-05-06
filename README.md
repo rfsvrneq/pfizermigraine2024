@@ -3,10 +3,8 @@
 ### vue版本
 vue 3.3.4
 nuxt 3.7.4
-
 1.先安裝：npx nuxi@latest init sitename
 2.換版本：npm i nuxt@3.7.4
-
 
 ### node版本
 v18.0.0
@@ -26,6 +24,9 @@ npm run generate:dev
 
 ### 說明
 
+### 自動載入環境變數與配置
+.env.dve / .env.local / .env.prod
+package.json 對應 scripts.js 讀取設定檔
 
 
 
