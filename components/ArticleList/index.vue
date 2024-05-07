@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+
+  const store = useApiStore();
+
+</script>
 
 <template>
   <div>
@@ -7,8 +11,9 @@
       相關文章
       <span>- Article -</span>
     </h1>
-
+    
     <ArticleListRow />
+
 
   </div>
 </template>

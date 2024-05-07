@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   // css: ['~/assets/css/main.css'],
+  
   // 伺服器端環境變數
   runtimeConfig: {
     // 伺服端與客戶端
@@ -122,6 +123,17 @@ export default defineNuxtConfig({
         }
       ]
     }
-  }
- 
+  },
+  "imports": {
+    "dirs": ['stores']
+  },
+  "modules": [
+      [
+        '@pinia/nuxt',
+        {
+          'autoImports': ['defineStore', 'acceptHMRUpdate'],
+        },
+      ]
+  ],
+  
 })
