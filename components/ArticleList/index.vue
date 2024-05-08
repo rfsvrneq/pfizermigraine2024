@@ -10,7 +10,10 @@ div
     h2.ttl
       | 相關文章
       span ─&ensp;Article&ensp;─
-      ArticleListrow
+
+    p {{ store.getApiData }}
+
+  //- ArticleListRow
 </template>
 
 <style scoped></style>

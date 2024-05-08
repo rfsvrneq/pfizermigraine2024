@@ -10,7 +10,7 @@ div.bg-primary-rebrown-800
     h2.ttl.text-white
       | 講者陣容
       span ─&ensp;Speaker&ensp;─
-    Speakerrow
+    //- Speakerrow
 </template>
 
 <style scoped></style>

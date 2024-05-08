@@ -21,7 +21,7 @@ div#info
         span.rounded-btn.mt-3
           span.text-shadow $
           span.text-3xl.font-semibold.text-shadow 890
-          sapn.text-shadow 元
+          span.text-shadow 元
           img(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
 
       a.join-btn.mx-0.my-5(class="md:mx-5 md:my-0")(href="http://", target="_blank", rel="noopener noreferrer")
@@ -30,7 +30,7 @@ div#info
         span.rounded-btn.mt-3.min-w-32.inline-block
           span.text-shadow $
           span.text-3xl.font-semibold.text-shadow 0
-          sapn.text-shadow 元
+          span.text-shadow 元
           img(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
 
       a.join-btn.flex-1(href="http://", target="_blank", rel="noopener noreferrer")
@@ -41,14 +41,14 @@ div#info
             span.rounded-btn.mt-3
               span.text-shadow $
               span.text-3xl.font-semibold.text-shadow 1,490
-              sapn.text-shadow 元
+              span.text-shadow 元
               img(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
             p.text-white.text-sm.mt-2 ※1年期紙本月刊
           .flex.flex-col
             span.rounded-btn.mt-3
               span.text-shadow $
               span.text-3xl.font-semibold.text-shadow 890
-              sapn.text-shadow 元
+              span.text-shadow 元
               img(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
             p.text-white.text-sm.mt-2 ※1年期電子月刊
 
