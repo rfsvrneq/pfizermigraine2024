@@ -1,7 +1,10 @@
 <script setup>
 
   const store = useApiStore();
-
+  const articleArray = ref(store.apiData_2.Data.find(
+    e => e.TypeCode == '07'
+  ).Data)
+  
 </script>
 
 <template lang="pug">
@@ -11,9 +14,11 @@ div
       | 相關文章
       span ─&ensp;Article&ensp;─
 
-    p {{ store.getApiData }}
+    section
+      ArticleListCard(v-for="article in articleArray" :key="article.ID" :article="article")
 
-  //- ArticleListRow
+
+
 </template>
 
 <style scoped></style>

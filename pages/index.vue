@@ -11,6 +11,7 @@
   // 取出環境變數
   const { public: { cache, status, apiUrl} } = useRuntimeConfig();
   
+  // 傳入參數設定
   const body_1 = {
     SiteNo: 9,
     ID: Api.FeatureId_1,
@@ -31,39 +32,6 @@
   };
 
   const store = useApiStore();
-
-  // await useAsyncData('api', async () => {
-  //   const [{ data: data_1 }, { data: data_2 }, { data: data_3 }] = await Promise.all([
-  //     $fetch(apiUrl + Api.FeatureList, {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //         'Accept': 'application/json'
-  //       },
-  //       body: JSON.stringify(body_1)
-  //     }),
-  //     $fetch(apiUrl + Api.FeatureArticleList, {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //         'Accept': 'application/json'
-  //       },
-  //       body: JSON.stringify(body_2)
-  //     }),
-  //     $fetch(apiUrl + Api.FeatureArticleList, {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //         'Accept': 'application/json'
-  //       },
-  //       body: JSON.stringify(body_3)
-  //     }),
-  //   ]);
-
-  //   store.setApiData(data);
-  //   return data;
-
-  // });
 
   await Promise.all([
     useAsyncData('api1', async () => {
@@ -107,7 +75,6 @@
   ]);
 
 
-
   // await useAsyncData('api', async () => {
   //   const data = await $fetch(apiUrl + Api.FeatureList, {
   //     method: 'POST',
@@ -128,6 +95,7 @@ div
   Kv
   Info
   Speaker
+  Agenda
   ArticleList
   Note
 </template>

@@ -14,19 +14,21 @@ export const useApiStore = defineStore("api", () => {
   // }
   // return { apiData, setApiData };
 
+  // 特企
   const setApiData_1 = (data) => {
     apiData_1.value = data.JData.FeatureList;
-    console.log(data.JData.FeatureList);
+    // console.log(data.JData.FeatureList);
   }
 
   const setApiData_2 = (data) => {
-    apiData_2.value = data;
-    console.log(data);
+    apiData_2.value = data.JData;
+    console.log(data.JData);
   }
 
+  // 文章
   const setApiData_3 = (data) => {
-    apiData_3.value = data;
-    console.log(data);
+    apiData_3.value = data.JData.data;
+    // console.log(data.JData.data);
   }
 
   return { 

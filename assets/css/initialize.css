@@ -1,0 +1,18 @@
+.initialize ul, .initialize ol {
+  list-style: disc;
+  margin: revert;
+  padding: revert;
+}
+.initialize blockquote, .initialize dl, .initialize dd, .initialize h1, .initialize h2, .initialize h3, .initialize h4, .initialize h5, .initialize h6, .initialize hr, .initialize figure, .initialize p, .initialize pre {
+  margin: revert;
+  font-size: revert;
+  font-weight: revert;
+}
+
+.initialize .table {
+  width: 100%;
+}
+
+.initialize .table-bordered {
+  border: 3px solid #8c6238;
+}

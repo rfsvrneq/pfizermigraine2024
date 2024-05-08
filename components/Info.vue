@@ -1,21 +1,25 @@
-<script setup></script>
+<script setup>
+const store = useApiStore();
+const htmlContent =  store.apiData_1.find(e => e.ID == '2803').Content;
+
+</script>
 
 <template lang="pug">
 div#info
-  .container
+  .container.text-center
 
     //- 直播日期
     h4.flex.justify-center.items-center.flex-col(class="sm:flex-row")
       span.font-spartan.text-4xl.font-semibold.text-primary-rebrown-900.-mb-1 2024/05/29
       .mx-1.flex.items-center.my-2
         span.text-white.text-xl.bg-primary-orange.rounded-full.px-1.mr-1 三
-        span.font-spartan.text-2xl.text-primary-orange.-mb-2 12:00～14:00
+        span.font-spartan.font-semibold.text-2xl.text-primary-orange.-mb-2 12:00～14:00
       span.text-4xl.font-bold.text-primary-rebrown-900 線上直播
     
     
     //- 報名按鈕
     .join-btns.flex.justify-between.my-12.flex-col(class="md:flex-row")
-      a.join-btn(href="http://", target="_blank", rel="noopener noreferrer")
+      a.join-btn(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017034", target="_blank", rel="noopener noreferrer")
         span.text-2xl.tracking-widest.font-semibold.text-white 我要報名
         span.text-2xl.tracking-widest.font-semibold.text-white 單場直播
         span.rounded-btn.mt-3
@@ -24,7 +28,7 @@ div#info
           span.text-shadow 元
           img(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
 
-      a.join-btn.mx-0.my-5(class="md:mx-5 md:my-0")(href="http://", target="_blank", rel="noopener noreferrer")
+      a.join-btn.mx-0.my-5(class="md:mx-5 md:my-0")(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017033", target="_blank", rel="noopener noreferrer")
         span.text-2xl.tracking-widest.font-semibold.text-white 我是訂戶
         span.text-2xl.tracking-widest.font-semibold.text-white 直接報名
         span.rounded-btn.mt-3.min-w-32.inline-block
@@ -33,19 +37,19 @@ div#info
           span.text-shadow 元
           img(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
 
-      a.join-btn.flex-1(href="http://", target="_blank", rel="noopener noreferrer")
+      .join-btn.flex-1
         span.text-2xl.tracking-widest.font-semibold.text-white 訂閱月刊
         span.text-2xl.tracking-widest.font-semibold.text-white 成為訂戶
         .flex
           .flex.flex-col.mr-4
-            span.rounded-btn.mt-3
+            a.rounded-btn.mt-3(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017036", target="_blank", rel="noopener noreferrer")
               span.text-shadow $
               span.text-3xl.font-semibold.text-shadow 1,490
               span.text-shadow 元
               img(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
             p.text-white.text-sm.mt-2 ※1年期紙本月刊
           .flex.flex-col
-            span.rounded-btn.mt-3
+            a.rounded-btn.mt-3(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017035", target="_blank", rel="noopener noreferrer")
               span.text-shadow $
               span.text-3xl.font-semibold.text-shadow 890
               span.text-shadow 元
@@ -53,19 +57,12 @@ div#info
             p.text-white.text-sm.mt-2 ※1年期電子月刊
 
 
-    //- 直播資訊 cms
     h2.ttl
       | 直播資訊
       span ─&ensp;Information&ensp;─
-    section.info-text
-      h3 專為投資人打造的退休趨勢論壇
-      p 通膨高漲、降息時程擺盪⋯⋯在種種不穩 定的市場環境下，
-      p 通膨高漲、降息時程擺盪⋯⋯在種種不穩 定的市場環境下，
-      p 通膨高漲、降息時程擺盪⋯⋯在種種不穩 定的市場環境下，
-      p 通膨高漲、降息時程擺盪⋯⋯在種種不穩 定的市場環境下，
-      p 通膨高漲、降息時程擺盪⋯⋯在種種不穩 定的市場環境下，
-      p 通膨高漲、降息時程擺盪⋯⋯在種種不穩 定的市場環境下，
-      p 如何規畫投資，才可以提早達到財富自由境界，安心退休呢？
+
+    //- 直播資訊 CMS 編輯器
+    section.info-text.initialize(v-html="htmlContent")
 
 
 </template>
