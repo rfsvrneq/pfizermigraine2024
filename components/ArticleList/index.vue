@@ -15,8 +15,9 @@ div
       span ─&ensp;Article&ensp;─
 
     section
-      ArticleListCard(v-for="article in articleArray" :key="article.ID" :article="article")
-
+      div(v-for="article in articleArray" :key="article.ID")
+        a(:href="article.LinkUrl", target="_blank", rel="noopener noreferrer") {{ article.Title }}
+        img(:src="article.ImgSrc", :alt="article.Title")
 
 
 </template>
