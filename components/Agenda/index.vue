@@ -8,9 +8,9 @@
 div
   .container
     h2.ttl
-      | 相關文章
+      | 詳細議程
       span ─&ensp;Article&ensp;─
-      ArticleListrow
+      Agendarow
 </template>
 
 <style scoped></style>

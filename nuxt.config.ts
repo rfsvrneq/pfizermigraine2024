@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  // css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css'],
   
   // 伺服器端環境變數
   runtimeConfig: {
@@ -135,5 +135,12 @@ export default defineNuxtConfig({
         },
       ]
   ],
+  
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
   
 })

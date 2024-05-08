@@ -1,4 +1,6 @@
 <script setup>
+import Note from '~/components/Note.vue';
+
 
   const Api = {
     FeatureList: '/SpecialTopic/GetFeatureList', // 取得特企列表
@@ -33,10 +35,16 @@
 
 </script>
 
-<template>
-  <div>
-    <ArticleList />
-  </div>
+<template lang="pug">
+  
+div
+  Kv
+  Info
+  Speaker
+  Agenda
+  ArticleList
+  Note
+
 </template>
 
 <style scoped></style>

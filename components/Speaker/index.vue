@@ -5,12 +5,12 @@
 </script>
 
 <template lang="pug">
-div
+div.bg-primary-rebrown-800
   .container
-    h2.ttl
-      | 相關文章
-      span ─&ensp;Article&ensp;─
-      ArticleListrow
+    h2.ttl.text-white
+      | 講者陣容
+      span ─&ensp;Speaker&ensp;─
+    Speakerrow
 </template>
 
 <style scoped></style>
