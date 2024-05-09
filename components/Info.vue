@@ -22,7 +22,7 @@ div#info
       a.join-btn(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017034", target="_blank", rel="noopener noreferrer")
         span.text-2xl.tracking-widest.font-semibold.text-white 我要報名
         span.text-2xl.tracking-widest.font-semibold.text-white 單場直播
-        span.rounded-btn.mt-3
+        .rounded-btn.mt-3
           span.text-shadow $
           span.text-3xl.font-semibold.text-shadow 890
           span.text-shadow 元
@@ -31,7 +31,7 @@ div#info
       a.join-btn.mx-0.my-5(class="md:mx-5 md:my-0")(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017033", target="_blank", rel="noopener noreferrer")
         span.text-2xl.tracking-widest.font-semibold.text-white 我是訂戶
         span.text-2xl.tracking-widest.font-semibold.text-white 直接報名
-        span.rounded-btn.mt-3.min-w-32.inline-block
+        .rounded-btn.mt-3.min-w-32.inline-block
           span.text-shadow $
           span.text-3xl.font-semibold.text-shadow 0
           span.text-shadow 元
@@ -62,7 +62,7 @@ div#info
       span ─&ensp;Information&ensp;─
 
     //- 直播資訊 CMS 編輯器
-    section.info-text.initialize(v-html="htmlContent")
+    section.info-content.initialize(v-html="htmlContent")
 
 
 </template>
@@ -83,9 +83,12 @@ div#info
   border-image: linear-gradient(to left, #E9A42D, #FFDC8F, #E38E06) 3 / 3px
   box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19)
   min-width: 27%
+  border-radius: .25rem
 
-.info-text
+.info-content
+  @apply bg-primary-grey py-10 px-4 border-primary-rebrown-900 border-4 shadow-lg max-w-3xl mx-auto w-10/12
   position: relative
+  border-radius: .25rem
   &::before, &::after
     content: ""
     width: 120px

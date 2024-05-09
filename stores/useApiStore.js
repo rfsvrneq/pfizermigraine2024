@@ -22,13 +22,12 @@ export const useApiStore = defineStore("api", () => {
 
   const setApiData_2 = (data) => {
     apiData_2.value = data.JData;
-    console.log(data.JData);
+    // console.log(data.JData);
   }
 
-  // 文章
   const setApiData_3 = (data) => {
-    apiData_3.value = data.JData.data;
-    // console.log(data.JData.data);
+    apiData_3.value = data.JData;
+    // console.log(data.JData);
   }
 
   return { 

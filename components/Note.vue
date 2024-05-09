@@ -7,7 +7,9 @@ const htmlContent =  store.apiData_1.find(e => e.ID == '2809').Content;
 
 div.bg-primary-rebrown-800
   .container
-    h4.ttl-sub 訂購須知
+    h4.ttl-sub
+      img.inline.pr-2.align-middle(src="/assets/img/live-icon.svg")
+      | 訂購須知
 
     //- 訂購須知 CMS 編輯器
     .text-primary-grey.initialize

@@ -3,9 +3,9 @@
   const Api = {
     FeatureList: '/SpecialTopic/GetFeatureList', // 取得特企列表
     FeatureArticleList: '/SpecialTopic/GetFeatureArticleList', // 取得特企文章（相關資料）
-    FeatureId_1: '2803',
-    FeatureId_2: '2809',
-    FeatureId_3: '2806',
+    FeatureId_1: '2803', // 主特企
+    FeatureId_2: '2809', // 相關文章、訂購須知
+    FeatureId_3: '2806', // 講者陣容、詳細議程
   }
 
   // 取出環境變數
