@@ -8,7 +8,7 @@
 </script>
 
 <template lang="pug">
-div.bg-primary-rebrown-800
+div#speaker.bg-primary-rebrown-800
   .container
     h2.ttl.text-white
       | 講者陣容

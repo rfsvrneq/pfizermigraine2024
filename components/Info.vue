@@ -19,7 +19,7 @@ div#info
     
     //- 報名按鈕
     .join-btns.flex.justify-between.my-12.flex-col(class="md:flex-row")
-      a.join-btn(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017034", target="_blank", rel="noopener noreferrer")
+      a.join-btn(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017034", target="_blank", rel="noopener noreferrer", data-autoutm)
         span.text-2xl.tracking-widest.font-semibold.text-white 我要報名
         span.text-2xl.tracking-widest.font-semibold.text-white 單場直播
         .rounded-btn.mt-3
@@ -28,7 +28,7 @@ div#info
           span.text-shadow 元
           img(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
 
-      a.join-btn.mx-0.my-5(class="md:mx-5 md:my-0")(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017033", target="_blank", rel="noopener noreferrer")
+      a.join-btn.mx-0.my-5(class="md:mx-5 md:my-0")(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017033", target="_blank", rel="noopener noreferrer", data-autoutm)
         span.text-2xl.tracking-widest.font-semibold.text-white 我是訂戶
         span.text-2xl.tracking-widest.font-semibold.text-white 直接報名
         .rounded-btn.mt-3.min-w-32.inline-block
@@ -42,14 +42,14 @@ div#info
         span.text-2xl.tracking-widest.font-semibold.text-white 成為訂戶
         .flex
           .flex.flex-col.mr-4
-            a.rounded-btn.mt-3(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017036", target="_blank", rel="noopener noreferrer")
+            a.rounded-btn.mt-3(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017036", target="_blank", rel="noopener noreferrer", data-autoutm)
               span.text-shadow $
               span.text-3xl.font-semibold.text-shadow 1,490
               span.text-shadow 元
               img(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
             p.text-white.text-sm.mt-2 ※1年期紙本月刊
           .flex.flex-col
-            a.rounded-btn.mt-3(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017035", target="_blank", rel="noopener noreferrer")
+            a.rounded-btn.mt-3(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017035", target="_blank", rel="noopener noreferrer", data-autoutm)
               span.text-shadow $
               span.text-3xl.font-semibold.text-shadow 890
               span.text-shadow 元
@@ -70,6 +70,9 @@ div#info
 <style scoped lang="sass">
 #info
   background: url(/assets/img/info-bg.png)
+  background-size: cover
+  @media screen and (max-width: 768px)
+    background-size: 200% auto
 
 .join-btn
   display: flex

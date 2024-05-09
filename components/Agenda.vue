@@ -6,7 +6,7 @@
 </script>
 
 <template lang="pug">
-div
+div#agenda
   .container
     h2.ttl
       | 詳細議程

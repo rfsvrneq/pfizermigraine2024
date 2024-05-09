@@ -110,7 +110,13 @@ export default defineNuxtConfig({
           })(window,document,'script','dataLayer','GTM-PHQCPT2V');
           `,
           body: true
-        }
+        },
+        {
+          hid: 'utmftag',
+          src: 'https://ibw.bwnet.com.tw/assets/library/special/auto-utm/autoutm.min.js',
+          defer: true,
+          tagPosition: 'bodyClose',
+        },
       ],
       noscript: [
         {

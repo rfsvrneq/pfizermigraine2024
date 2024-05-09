@@ -8,7 +8,7 @@
 </script>
 
 <template lang="pug">
-div
+div#article
   .container
     h2.ttl
       | 相關文章
