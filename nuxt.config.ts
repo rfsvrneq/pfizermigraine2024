@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css', '~/assets/css/initialize.css'],
+  css: ['~/assets/css/main.css', '~/assets/css/initialize.css', 'animate.css/animate.min.css', '~/assets/css/ani.css'],
   
   // 伺服器端環境變數
   runtimeConfig: {
@@ -139,7 +139,7 @@ export default defineNuxtConfig({
         {
           'autoImports': ['defineStore', 'acceptHMRUpdate'],
         },
-      ]
+      ],
   ],
   
   postcss: {

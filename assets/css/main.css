@@ -22,7 +22,7 @@
     @apply text-primary-gold text-2xl text-center font-medium
   }
   .rounded-btn {
-    @apply rounded-full bg-slate-400 bg-gradient-to-r from-primary-gold to-primary-orange px-4 text-white font-spartan inline-block pt-3 pb-1 relative
+    @apply rounded-full bg-slate-400 bg-gradient-to-r from-primary-gold to-primary-orange px-4 text-white font-spartan inline-block pt-3 pb-1 relative hover:bg-gradient-to-b
   }
   .text-shadow {
     @apply [text-shadow:0px_0px_1px_var(--tw-shadow-color)] shadow-gray-600

@@ -1,0 +1,17 @@
+.ani-fadeIn {
+  animation: fadeIn;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.ani-shake {
+  animation: shakeY;
+  animation-duration: 12s; 
+  animation-iteration-count: infinite;
+}
+
+.ani-flash {
+  animation: flash;
+  animation-duration: 3s; 
+  animation-iteration-count: infinite;
+}

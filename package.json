@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
+    "animate.css": "^4.1.1",
     "dotenv": "^16.4.5",
     "nuxt": "^3.7.4",
     "pinia": "^2.1.7",

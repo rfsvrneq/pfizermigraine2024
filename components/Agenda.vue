@@ -13,7 +13,7 @@ div#agenda
       span ─&ensp;Agenda&ensp;─
 
     //- 詳細議程 CMS 編輯器
-    section.initialize(v-html="htmlContent")
+    section.initialize.ani-fadeIn(v-html="htmlContent")
 
 
 </template>

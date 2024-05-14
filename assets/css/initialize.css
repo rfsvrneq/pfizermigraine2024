@@ -18,3 +18,8 @@
 .initialize .table-bordered {
   border: 3px solid #8c6238;
 }
+
+.initialize td {
+  padding-left: 10px;
+  padding-right: 10px;
+}

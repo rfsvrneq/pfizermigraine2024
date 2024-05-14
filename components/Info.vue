@@ -26,7 +26,7 @@ div#info
           span.text-shadow $
           span.text-3xl.font-semibold.text-shadow 890
           span.text-shadow 元
-          img(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
+          img.ani-flash(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
 
       a.join-btn.mx-0.my-5(class="md:mx-5 md:my-0")(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017033", target="_blank", rel="noopener noreferrer", data-autoutm)
         span.text-2xl.tracking-widest.font-semibold.text-white 我是訂戶
@@ -35,7 +35,7 @@ div#info
           span.text-shadow $
           span.text-3xl.font-semibold.text-shadow 0
           span.text-shadow 元
-          img(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
+          img.ani-flash(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
 
       .join-btn.flex-1
         span.text-2xl.tracking-widest.font-semibold.text-white 訂閱月刊
@@ -46,14 +46,14 @@ div#info
               span.text-shadow $
               span.text-3xl.font-semibold.text-shadow 1,490
               span.text-shadow 元
-              img(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
+              img.ani-flash(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
             p.text-white.text-sm.mt-2 ※1年期紙本月刊
           .flex.flex-col
             a.rounded-btn.mt-3(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017035", target="_blank", rel="noopener noreferrer", data-autoutm)
               span.text-shadow $
               span.text-3xl.font-semibold.text-shadow 890
               span.text-shadow 元
-              img(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
+              img.ani-flash(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
             p.text-white.text-sm.mt-2 ※1年期電子月刊
 
 
@@ -105,12 +105,12 @@ div#info
     @media screen and (max-width: 1024px)
       width: calc(120px / 4)
       height: calc(220px / 4)
-      top: -30px
-      right: -40px
+      top: -50px
+      right: -35px
+      transform: rotate(-45deg)
   &::after
     left: -140px
     transform: scaleX(-1)
     @media screen and (max-width: 1024px)
       display: none
-  
 </style>
