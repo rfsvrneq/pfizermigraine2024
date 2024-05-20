@@ -40,7 +40,7 @@ package.json 對應 scripts.js 讀取設定檔
 2. a 加上 data-autoutm
 
 ### 說明
-
+1. initialize.css cms 引言編輯器樣式
 
 
 

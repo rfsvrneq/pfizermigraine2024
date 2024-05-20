@@ -8,12 +8,12 @@
 <template lang="pug">
 div#agenda
   .container
-    h2.ttl
+    h2.ttl(data-aos="fade-up")
       | 詳細議程
       span ─&ensp;Agenda&ensp;─
 
     //- 詳細議程 CMS 編輯器
-    section.initialize.ani-fadeIn(v-html="htmlContent")
+    section.initialize(v-html="htmlContent")
 
 
 </template>

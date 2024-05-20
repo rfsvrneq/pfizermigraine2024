@@ -6,16 +6,16 @@ div#kv
 
     picture
       source(media='(min-width: 481px)' srcset='/assets/img/kv-word.png')
-      img.block.mx-auto.mt-20(src="/assets/img/kv-word-s.png")
+      img.block.mx-auto.mt-20(src="/assets/img/kv-word-s.png", data-aos="fade-up")
 
-    img.earth(src="/assets/img/earth.png")
+    img.earth(src="/assets/img/earth.png", data-aos="fade-up")
 
     picture
       source(media='(min-width: 769px)' srcset='/assets/img/people-wrap.png')
       img.block.mx-auto.mt-8.z-10.relative(src="/assets/img/people-wrap-s.png")
     
     a.float-btn(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017033", target="_blank", rel="noopener noreferrer", data-autoutm)
-      img.ani-shake(src="/assets/img/right-btn.png")
+      img(src="/assets/img/right-btn.png", data-aos="fade-up")
 
 </template>
 

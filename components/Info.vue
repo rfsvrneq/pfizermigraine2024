@@ -26,18 +26,18 @@ div#info
           span.text-shadow $
           span.text-3xl.font-semibold.text-shadow 890
           span.text-shadow 元
-          img.ani-flash(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
+          img(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
 
-      a.join-btn.mx-0.my-5(class="md:mx-5 md:my-0")(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017033", target="_blank", rel="noopener noreferrer", data-autoutm)
+      a.join-btn.mx-0.my-5(class="md:mx-5 md:my-0")(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017033", target="_blank", rel="noopener noreferrer", data-autoutm )
         span.text-2xl.tracking-widest.font-semibold.text-white 我是訂戶
         span.text-2xl.tracking-widest.font-semibold.text-white 直接報名
         .rounded-btn.mt-3.min-w-32.inline-block
           span.text-shadow $
           span.text-3xl.font-semibold.text-shadow 0
           span.text-shadow 元
-          img.ani-flash(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
+          img(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
 
-      .join-btn.flex-1
+      .join-btn.flex-1()
         span.text-2xl.tracking-widest.font-semibold.text-white 訂閱月刊
         span.text-2xl.tracking-widest.font-semibold.text-white 成為訂戶
         .flex
@@ -46,18 +46,18 @@ div#info
               span.text-shadow $
               span.text-3xl.font-semibold.text-shadow 1,490
               span.text-shadow 元
-              img.ani-flash(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
+              img(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
             p.text-white.text-sm.mt-2 ※1年期紙本月刊
           .flex.flex-col
             a.rounded-btn.mt-3(href="https://smart.businessweekly.com.tw/ecourse/productVideo.aspx?PROD_TYPE_NO=PROD000017035", target="_blank", rel="noopener noreferrer", data-autoutm)
               span.text-shadow $
               span.text-3xl.font-semibold.text-shadow 890
               span.text-shadow 元
-              img.ani-flash(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
+              img(src="/assets/img/arrow-icon.svg", alt="報名按鈕").absolute.-bottom-1.-right-3
             p.text-white.text-sm.mt-2 ※1年期電子月刊
 
 
-    h2.ttl
+    h2.ttl(data-aos="fade-up")
       | 直播資訊
       span ─&ensp;Information&ensp;─
 

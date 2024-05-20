@@ -74,7 +74,6 @@
     })
   ]);
 
-
   // await useAsyncData('api', async () => {
   //   const data = await $fetch(apiUrl + Api.FeatureList, {
   //     method: 'POST',

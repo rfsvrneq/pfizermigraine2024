@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css', '~/assets/css/initialize.css', 'animate.css/animate.min.css', '~/assets/css/ani.css'],
+  css: ['~/assets/css/main.css', '~/assets/css/initialize.css'],
   
   // 伺服器端環境變數
   runtimeConfig: {
@@ -17,13 +17,7 @@ export default defineNuxtConfig({
       gaEventName: process.env.NUXT_ENV_GA_EVENT_NAME,
     }
   },
-  plugins: [
-    // {
-    //   src: '~/plugins/aos.js',
-    //   // ssr: false,
-    //   mode: 'client'
-    // }
-  ],
+
   // meta / GA 設定
   app: {
     baseURL: process.env.NUXT_ENV_URL_ROUTE, // 請放專案的路徑
@@ -133,7 +127,7 @@ export default defineNuxtConfig({
   "imports": {
     "dirs": ['stores']
   },
-  "modules": [
+  modules: [
       [
         '@pinia/nuxt',
         {
@@ -148,5 +142,13 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
+  plugins: [
+    {
+      src: '~/plugins/aos.js',
+      // ssr: false,
+      mode: 'client'
+    }
+  ],
   
 })

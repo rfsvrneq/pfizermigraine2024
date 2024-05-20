@@ -10,12 +10,12 @@
 <template lang="pug">
 div#speaker.bg-primary-rebrown-800
   .container.max-w-5xl
-    h2.ttl.text-white
+    h2.ttl.text-white(data-aos="fade-up")
       | 講者陣容
       span ─&ensp;Speaker&ensp;─
 
     section.grid.grid-cols-1.justify-items-center.justify-center(class="sm:grid-cols-2 lg:grid-cols-3")
-      h4.img-arrary.wow.ani-fadeIn(v-for="img in imgArray" :key="img.ID")
+      h4.img-arrary(v-for="img in imgArray" :key="img.ID")
         img.-mt-10(:src="img.ImgSrc", alt="講者陣容")
         p.text-primary-gold.text-xl.font-medium.m-4.min-h-16.border-b-2.border-primary-gold.pb-4 {{ img.Title }}
         p.px-4.pb-4.text-justify.text-lg {{ img.Abstract }}
