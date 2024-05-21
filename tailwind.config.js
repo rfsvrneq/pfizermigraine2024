@@ -10,20 +10,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary-red': '#D0111B',
-        'primary-rebrown-900': '#775533',
-        'primary-rebrown-800': '#8C6239',
-        'primary-gold': '#E3C275',
-        'primary-orange': '#E08A00',
-        'primary-grey': '#F0EBE7',
-        'primary-blue': '#004A6D',
+        'custom-red': '#D0111B',
+        'custom-gold': '#E3C275',
+        'custom-orange': '#E08A00',
+        'custom-grey': '#F0EBE7',
+        'custom-blue': '#004A6D',
       },
       screens: {
         'xs': '480px',
       },
       fontFamily: {
         'sans': ['"Noto Sans TC"', '"Microsoft JhengHei"', "cursive"],
-        'spartan': ["Spartan", "sans-serif"],
+        'zen': ["Zen Maru Gothic", "sans-serif"],
       },
     },
   },

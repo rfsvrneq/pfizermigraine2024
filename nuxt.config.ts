@@ -1,7 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
+import path from 'path'
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css', '~/assets/css/initialize.css'],
+  css: ['~/assets/css/main.css'],
   
   // 伺服器端環境變數
   runtimeConfig: {
@@ -150,5 +154,17 @@ export default defineNuxtConfig({
       mode: 'client'
     }
   ],
+
+  // SVG 插件
+  "vite": {
+    plugins: [
+      createSvgIconsPlugin({
+        iconDirs: [path.resolve(process.cwd(), 'assets/img/icons')],
+        symbolId: '[dir]/[name]',
+        customDomId: '__svg__icons__dom__',
+      }),
+    ],
+  },
+ 
   
 })

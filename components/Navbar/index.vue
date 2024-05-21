@@ -1,22 +1,22 @@
 <script setup>
   const nav = [
     {
-      title: '直播資訊',
+      title: '區塊一',
       active: false,
       type: '#info'
     },
     {
-      title: '講者陣容',
+      title: '區塊二',
       active: false,
       type: '#speaker'
     },
     {
-      title: '詳細議程',
+      title: '區塊三',
       active: false,
       type: '#agenda'
     },
     {
-      title: '相關文章',
+      title: '區塊四',
       active: false,
       type: '#article'
     },
@@ -43,13 +43,13 @@ const moveTo = (ta) => {
 </script>
 
 <template lang="pug">
-div#topbar.w-full.fixed.top-0.left-0.h-16.z-20.bg-primary-rebrown-900.border-b-2.border-primary-orange
+div#topbar.w-full.fixed.top-0.left-0.h-16.z-20.bg-slate-500
   
   nav.flex.justify-between.items-center.h-full.container.py-0
     
     //- logo
     a.w-36.block(href="https://smart.businessweekly.com.tw/", target="_blank") 
-      img.w-full(src="/assets/img/smart-logo.svg", alt="Smart 自學網")
+      img.w-full(src="/assets/img/icons/smart-logo.svg", alt="Smart 自學網")
 
     //- 漢堡
     a.burger-trigger(href="#", :class="{ 'active': burgerTrigger == true }", @click.prevent="burgerTrigger = !burgerTrigger")
@@ -80,17 +80,8 @@ $primary-blue: #004A6D !default
     a
       &:hover
         color: $primary-orange
-      &::after
-        content: '|'
-        padding-left: 1.25rem
-        color: white
-      &:last-child 
-        &::after
-          content: ''
-      @media screen and (max-width: 1024px)
-        &::after
-          content: ''
 
+  
   //-行動裝置漢堡與導覽列
   @media screen and (max-width: 1024px)
     padding-right: 15px
