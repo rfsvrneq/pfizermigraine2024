@@ -2,11 +2,14 @@
 
 <template lang="pug">
 div#kv
-  .container.pt-20
-    h1.ttl 主視覺
-    picture
-      //- source(media='(min-width: 769px)' srcset='/assets/img/people-wrap.png')
-      //- img.block.mx-auto.mt-8.z-10.relative(src="/assets/img/people-wrap-s.png")
+  .container.pt-20.pb-0.flex.justify-center.items-center
+    img(src="/assets/img/kv-ttl.svg")
+    //- img(src="/assets/img/icons/kv-1.svg")
+    //- img(src="/assets/img/icons/kv-2.svg")
+    //- img(src="/assets/img/icons/kv-3.svg")
+    //- img(src="/assets/img/icons/kv-4.svg")
+    //- img(src="/assets/img/icons/kv-5.svg")
+    //- img(src="/assets/img/icons/kv-6.svg")
     
 </template>
 

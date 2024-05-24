@@ -1,24 +1,24 @@
 <script setup>
   const nav = [
     {
-      title: '區塊一',
+      title: '關於我和偏頭痛的那件事',
       active: false,
-      type: '#info'
+      type: '#tab'
     },
     {
-      title: '區塊二',
+      title: '如何舒緩及解決偏頭痛問題 ',
       active: false,
-      type: '#speaker'
+      type: '#who'
     },
     {
-      title: '區塊三',
+      title: '偏頭痛自我診斷指南',
       active: false,
-      type: '#agenda'
+      type: '#card'
     },
     {
-      title: '區塊四',
+      title: '精選文章',
       active: false,
-      type: '#article'
+      type: '#slide'
     },
   ]
   
@@ -43,13 +43,13 @@ const moveTo = (ta) => {
 </script>
 
 <template lang="pug">
-div#topbar.w-full.fixed.top-0.left-0.h-16.z-20.bg-slate-500
+div#topbar.w-full.fixed.top-0.left-0.h-16.z-20.bg-white
   
   nav.flex.justify-between.items-center.h-full.container.py-0
     
     //- logo
-    a.w-36.block(href="https://smart.businessweekly.com.tw/", target="_blank") 
-      img.w-full(src="/assets/img/icons/smart-logo.svg", alt="Smart 自學網")
+    a.w-24.block(href="https://www.commonhealth.com.tw/", target="_blank") 
+      img.w-full(src="/assets/img/logo.png", alt="康健雜誌")
 
     //- 漢堡
     a.burger-trigger(href="#", :class="{ 'active': burgerTrigger == true }", @click.prevent="burgerTrigger = !burgerTrigger")
@@ -67,19 +67,21 @@ div#topbar.w-full.fixed.top-0.left-0.h-16.z-20.bg-slate-500
 
 <style scoped lang="sass">
 
-$primary-red: #D0111B !default
-$primary-rebrown-900: #775533 !default
-$primary-rebrown-800: #8C6239 !default
-$primary-gold: #E3C275 !default
-$primary-orange: #E08A00 !default
-$primary-grey: #F0EBE7 !default
-$primary-blue: #004A6D !default
+$nav-item-a: #292621 !default
+$nav-item-a-hover: #264964 !default
+$nav-wrap-bg: #F1F1EB !default
+$burger: #264964 !default
+$nav-wrap-bg-mobile: #C3DCD9 !default
+$nav-item-a-mobile: #292621 !default
+$nav-item-a-hover-mobile: white !default
+
 
 #topbar
   .item
     a
+      color: $nav-item-a
       &:hover
-        color: $primary-orange
+        color: $nav-item-a-hover
 
   
   //-行動裝置漢堡與導覽列
@@ -105,12 +107,12 @@ $primary-blue: #004A6D !default
         display: block
         width: 100%
         height: 2px
-        background: white
+        background: $burger
 
       //open
       &.active
         .first, .last
-          background: white
+          background: $burger
         .middle
           opacity: 0
         .first
@@ -133,7 +135,7 @@ $primary-blue: #004A6D !default
       transform-origin: right top
       transform: translateY(-100%)
       transition: transform .4s ease, opacity .4s ease
-      background-color: $primary-rebrown-800
+      background-color: $nav-wrap-bg-mobile
 
       // open
       &.active
@@ -149,19 +151,20 @@ $primary-blue: #004A6D !default
         align-items: center
         justify-content: center
       .item
-        min-width: 300px
+        width: 100%
         a
           display: block
           text-align: center
           width: 100%
           font-size: 1.35rem
           margin-bottom: 1rem
+          margin-left: 0
           padding-top: .5rem
           padding-bottom: .5rem
           transition: color .3s ease
+          color: $nav-item-a-mobile
           &:hover
-            background: $primary-rebrown-900
-            border-radius: 3rem
+            background: $nav-item-a-hover-mobile
             transition: color .3s ease
 
   //-mobile

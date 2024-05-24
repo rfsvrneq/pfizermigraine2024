@@ -2,6 +2,8 @@
 
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 import path from 'path'
+import { defineNuxtModule } from 'nuxt'
+
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -131,14 +133,12 @@ export default defineNuxtConfig({
   "imports": {
     "dirs": ['stores']
   },
-  modules: [
-      [
-        '@pinia/nuxt',
-        {
-          'autoImports': ['defineStore', 'acceptHMRUpdate'],
-        },
-      ],
-  ],
+  modules: [[
+    '@pinia/nuxt',
+    {
+      'autoImports': ['defineStore', 'acceptHMRUpdate'],
+    },
+  ], 'nuxt-swiper', "@nuxt/image"],
   
   postcss: {
     plugins: {
@@ -165,6 +165,5 @@ export default defineNuxtConfig({
       }),
     ],
   },
- 
-  
+
 })
