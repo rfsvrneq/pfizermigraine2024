@@ -43,9 +43,9 @@ const moveTo = (ta) => {
 </script>
 
 <template lang="pug">
-div#topbar.w-full.fixed.top-0.left-0.h-16.z-20.bg-white
+div#topbar.w-full.fixed.top-0.left-0.h-16.z-20.bg-white.shadow-lg
   
-  nav.flex.justify-between.items-center.h-full.container.py-0
+  nav.flex.justify-between.items-center.h-full.container.max-w-6xl.py-0
     
     //- logo
     a.w-24.block(href="https://www.commonhealth.com.tw/", target="_blank") 

@@ -32,7 +32,8 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       htmlAttrs: {
-        lang: 'zh-tw'
+        lang: 'zh-tw',
+        'data-title': 'pfizermigraine2024' // 康健GA
       },
       meta: [
         {
@@ -43,10 +44,7 @@ export default defineNuxtConfig({
           name: 'keywords',
           content: process.env.NUXT_ENV_OG_KEYWORDS
         },
-        {
-          property: 'article:author',
-          content: 'https://www.facebook.com/smartmonthly'
-        },
+
         {
           property: 'og:type',
           content: 'website'
@@ -67,14 +65,7 @@ export default defineNuxtConfig({
           property: 'og:description',
           content: process.env.NUXT_ENV_OG_DESCRIPTION
         },
-        {
-          property: 'fb:admins',
-          content: '750981443'
-        },
-        {
-          property: 'fb:app_id',
-          content: '303021296416289'
-        },
+
         {
           property: 'og:image',
           content: process.env.NUXT_ENV_OG_IMAGE_URL
@@ -86,48 +77,27 @@ export default defineNuxtConfig({
           href: process.env.NUXT_ENV_URL_DOMAIN + process.env.NUXT_ENV_URL_ROUTE
         }
       ],
+      noscript: [
+        {
+          innerHTML: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCMN77" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+        }
+      ],
       script: [
         {
           innerHTML: `
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-NZ2WTC28');
-          //- End Google Tag Manager
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-NN40PY6FYG');
+          '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-MCMN77');
           `
         },
         {
-          innerHTML: `
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-PHQCPT2V');
-          `,
-          body: true
-        },
-        {
-          hid: 'utmftag',
-          src: 'https://ibw.bwnet.com.tw/assets/library/special/auto-utm/autoutm.min.js',
-          defer: true,
-          tagPosition: 'bodyClose',
+          hid: 'jquery',
+          src: 'https://code.jquery.com/jquery-3.6.0.min.js',
+          defer: true
         },
       ],
-      noscript: [
-        {
-          innerHTML: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZ2WTC28" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
-          body: true
-        },
-        {
-          innerHTML: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHQCPT2V" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
-          body: true
-        }
-      ]
     }
   },
   "imports": {
@@ -138,7 +108,7 @@ export default defineNuxtConfig({
     {
       'autoImports': ['defineStore', 'acceptHMRUpdate'],
     },
-  ], 'nuxt-swiper', "@nuxt/image"],
+  ], 'nuxt-swiper'],
   
   postcss: {
     plugins: {

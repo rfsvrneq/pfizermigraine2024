@@ -1,4 +1,4 @@
-# 會員直播活動網頁
+# pfizermigraine2024
 
 ### vue版本
 vue 3.3.4
@@ -26,24 +26,5 @@ npm run generate:dev
 ### 自動載入環境變數與配置
 .env.dve / .env.local / .env.prod
 package.json 對應 scripts.js 讀取設定檔
-
-### 文章API
-1. 文章用部落格的方式引入，需去除連結自帶參數：:href="article.LinkUrl.replace('?FeatureID=2809','')
-2. export useApiStore，解構賦值，在組件中調用
-  const store = useApiStore();
-  const imgArray = ref(store.apiData_3.Data.find(
-    e => e.TypeCode == '05'
-  ).Data)
-
-### utmftag
-1. 引入外部前端連結
-2. a 加上 data-autoutm
-
-### 說明
-1. initialize.css cms 引言編輯器樣式
-
-
-
-
 
 

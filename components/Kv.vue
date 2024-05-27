@@ -2,16 +2,12 @@
 
 <template lang="pug">
 div#kv
-  .container.pt-20.pb-0.flex.justify-center.items-center
-    img(src="/assets/img/kv-ttl.svg")
-    //- img(src="/assets/img/icons/kv-1.svg")
-    //- img(src="/assets/img/icons/kv-2.svg")
-    //- img(src="/assets/img/icons/kv-3.svg")
-    //- img(src="/assets/img/icons/kv-4.svg")
-    //- img(src="/assets/img/icons/kv-5.svg")
-    //- img(src="/assets/img/icons/kv-6.svg")
+  .max-w-6xl.mx-auto.kv-title.pt-24(class="lg:pt-28")
+    img.mx-auto(src="/assets/img/kv-ttl.svg")
+
     
 </template>
 
 <style scoped lang="sass">
+
 </style>
