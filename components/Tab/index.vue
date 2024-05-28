@@ -81,7 +81,7 @@ div#tab
               | 男性和女性受到的影響相同嗎？
             .flex.p-0.items-start(class="md:p-4 md:flex-row")
               img.w-20.my-5(class="md:w-36" src="/assets/img/icons/tab1-2.svg")
-              .content.text-xl.text-custom-grey-800.px-0.pl-4.text-justify(class="md:pl-0 md:px-8")
+              .content.text-xl.text-custom-grey-800.px-0.pl-4.text-justify(class="md:px-8")
                 p 整體而言，女性比男性更容易得到偏頭痛，比率約為3：1，而有四分之一的女性在一生中的某個時候都會遭受偏頭痛的困擾。
 
           //- 3
@@ -91,7 +91,7 @@ div#tab
               | 偏頭痛會遺傳嗎？
             .flex.p-0.items-start(class="md:p-4 md:flex-row")
               img.w-20.my-5(class="md:w-36" src="/assets/img/icons/tab1-3.svg")
-              .content.text-xl.text-custom-grey-800.px-0.pl-4.text-justify(class="md:pl-0 md:px-8")
+              .content.text-xl.text-custom-grey-800.px-0.pl-4.text-justify(class="md:px-8")
                 p 是的，偏頭痛可能會有遺傳因素。研究顯示，如果一個人的父母其中一方或雙方都有偏頭痛，那麼他們患上偏頭痛的風險就會增加。然而，偏頭痛的遺傳方式並不完全清楚，並且可能受到其他環境和生活方式因素的影響。
 
           //- 4
@@ -101,7 +101,7 @@ div#tab
               | 在我的一生中，偏頭痛的頻率和嚴重程度會改變嗎？
             .flex.p-0.items-start(class="md:p-4 md:flex-row")
               img.w-20.my-5(class="md:w-36" src="/assets/img/icons/tab1-4.svg")
-              .content.text-xl.text-custom-grey-800.px-0.pl-4.text-justify(class="md:pl-0 md:px-8")
+              .content.text-xl.text-custom-grey-800.px-0.pl-4.text-justify(class="md:px-8")
                 p 隨著偏頭痛患者年齡的增長，偏頭痛發作可能會變得不那麼頻繁和嚴重。 他們對噪音、光線和氣味的敏感度也可能下降。
 
           //- 5
@@ -111,7 +111,7 @@ div#tab
               | 我需要神經科醫師的正式診斷證明才能接受偏頭痛治療嗎？
             .flex.p-0.items-start(class="md:p-4 md:flex-row")
               img.w-20.my-5(class="md:w-36" src="/assets/img/icons/tab1-5.svg")
-              .content.text-xl.text-custom-grey-800.px-0.pl-4.text-justify(class="md:pl-0 md:px-8")
+              .content.text-xl.text-custom-grey-800.px-0.pl-4.text-justify(class="md:px-8")
                 p 通常情況下，接受偏頭痛治療並不一定需要神經科醫師的正式診斷證明。然而，對於一些特定情況，如複雜的病史或症狀，或者需要進一步評估的情況，可能需要神經科醫師的專業意見，因為偏頭痛的症狀可能與中風、癲癇或其他疾病的症狀相似。建議您與您的醫療提供者討論您的症狀和治療選項，並確定最適合您的治療計劃。
 
           //- 6
@@ -121,7 +121,7 @@ div#tab
               | 偏頭痛可以使用止痛藥治療嗎？
             .flex.p-0.items-start(class="md:p-4 md:flex-row")
               img.w-20.my-5(class="md:w-36" src="/assets/img/icons/tab1-6.svg")
-              .content.text-xl.text-custom-grey-800.px-0.pl-4.text-justify(class="md:pl-0 md:px-8")
+              .content.text-xl.text-custom-grey-800.px-0.pl-4.text-justify(class="md:px-8")
                 p 許多人在出現偏頭痛發作時會使用非處方的止痛藥，如布洛芬、阿司匹林或鎮痛劑，來緩解疼痛。但隨著時間一久會漸漸發現，藥效好像不夠了，需要增加到兩顆、三顆藥才能止住頭痛，而且頭痛越來越頻繁。因此常常使用止痛藥是治標不治本的方式，有可能誘發藥物濫用之頭痛，且止痛藥吃多了也可能傷身體，因此止痛藥並不能完全控制偏頭痛，可能需要其他治療方法，如服用偏頭痛專一性止痛藥物，CGRP 的血中濃度會降低，偏頭痛也同步改善。另外生活方式調整或規律的運動也有助於減輕偏頭痛的症狀。建議在使用任何治療前，諮詢您的專科醫師以獲得最適合您的建議。
 
       template(v-slot:偏頭痛成因)

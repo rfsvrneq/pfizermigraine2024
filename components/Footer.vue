@@ -25,7 +25,7 @@ div.text-sm.bg-custom-grey-500
         li
           a(href='https://lohas.commonhealth.com.tw/' target='_blank') 樂活島
     .commonhealth_footer-copyright
-      | Copyright © 2023 康健雜誌. All rights reserved. 
+      | Copyright © 2024 康健雜誌. All rights reserved. 
       br
       | 本網站內容受著作權保護，詳細請閱讀
       a(href='https://www.commonhealth.com.tw/copyright ' target='_blank') 著作權聲明
