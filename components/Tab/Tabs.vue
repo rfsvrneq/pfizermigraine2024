@@ -1,8 +1,8 @@
 <template lang="pug">
 div
   .tabs
-    div(v-for='(tab, index) in tabs' :key='index' @click='changeTab(tab)' :class="{ 'active': activeTab === tab }")
-      | {{ tab }}
+    div.click_event(v-for='(tab, index) in tabs' :key='index' @click='changeTab(tab.title)' :class="{ 'active': activeTab === tab.title }", data-title="pfizermigraine2024", :data-label="tab.label")
+      | {{ tab.title }}
   .tab-content
     slot(:name='activeTab')
 
@@ -11,8 +11,23 @@ div
 <script setup>
 import { ref } from 'vue';
 
-const tabs = ref(['迷思破解QA', '偏頭痛成因', '台灣現況']);
-const activeTab = ref(tabs.value[0]);
+// const tabs = ref(['迷思破解QA', '偏頭痛成因', '台灣現況']);
+const tabs = ref([
+  {
+    title: '迷思破解QA',
+    label: 'click-pfizer-migraine-misunderstanding',
+  },
+  {
+    title: '偏頭痛成因',
+    label: 'click-pfizer-migraine-cause',
+  },
+  {
+    title: '台灣現況',
+    label: 'click-pfizer-migraine-prevalenceofmigraineinTaiwan',
+  }
+]);
+
+const activeTab = ref(tabs.value[0].title);
 
 const changeTab = (tabName) => {
   activeTab.value = tabName;

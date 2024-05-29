@@ -48,7 +48,7 @@ const whos = [
 
 <template lang="pug">
 div
-  .container#who
+  .container#who(class="imp_event" data-title="pfizermigraine2024" data-label="imp_section-pfizer-migraine-solution")
     h2.ttl
       span 如
       span 何
@@ -70,7 +70,7 @@ div
         p.content-p.mt-4 {{ who.content }}
 
 
-  .container#card
+  .container#card(class="imp_event" data-title="pfizermigraine2024" data-label="imp_section-pfizer-migraine-selfdiagnosis")
     h2.ttl 
       span.icon-l 偏
       span 頭

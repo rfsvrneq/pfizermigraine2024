@@ -42,7 +42,7 @@ const tab2s = [
 </script>
 
 <template lang="pug">
-div#tab
+div#tab(class="imp_event" data-title="pfizermigraine2024" data-label="imp_section-pfizer-migraine-about")
   .container
     h2.ttl 
       span 關

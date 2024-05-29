@@ -3,22 +3,26 @@
     {
       title: '關於我和偏頭痛的那件事',
       active: false,
-      type: '#tab'
+      type: '#tab',
+      label: 'menu_關於我和偏頭痛的那件事',
     },
     {
       title: '如何舒緩及解決偏頭痛問題 ',
       active: false,
-      type: '#who'
+      type: '#who',
+      label: 'menu_如何舒緩及解決偏頭痛問題',
     },
     {
       title: '偏頭痛自我診斷指南',
       active: false,
-      type: '#card'
+      type: '#card',
+      label: 'menu_偏頭痛自我診斷指南',
     },
     {
       title: '精選文章',
       active: false,
-      type: '#slide'
+      type: '#slide',
+      label: 'menu_精選文章',
     },
   ]
   
@@ -62,7 +66,7 @@ div#topbar.w-full.fixed.top-0.left-0.h-16.z-20.bg-white.shadow-lg
       //-選單
       .nav
         .item
-          a.text-white.text-lg.ml-0(class="md:ml-5")(v-for=`(nav, index) in nav`, :href=`nav.type`, :class=`{ 'active': isActive == nav.type, 'first-border': index === 0 }`, @click.prevent=`moveTo(nav.type)`) {{nav.title}}
+          a.text-white.text-lg.ml-0(class="click_event" class="md:ml-5" data-title="pfizermigraine2024")(v-for=`(nav, index) in nav`, :href=`nav.type`, :class=`{ 'active': isActive == nav.type, 'first-border': index === 0 }`, @click.prevent=`moveTo(nav.type)`, :data-label="nav.label") {{nav.title}}
 </template>
 
 <style scoped lang="sass">
