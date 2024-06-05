@@ -10,6 +10,7 @@ div.bg-custom-grey
   Tab
   Health
   Slide
+  Reference
   Sponsor
 </template>
 

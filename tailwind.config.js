@@ -22,7 +22,7 @@ export default {
         'xs': '480px',
       },
       fontFamily: {
-        'sans': ['"Noto Sans TC"', '"Microsoft JhengHei"', "cursive"],
+        'sans': ['"Noto Sans TC"', '"Microsoft JhengHei"'],
         'zen': ["Zen Maru Gothic", "sans-serif"],
       },
     },

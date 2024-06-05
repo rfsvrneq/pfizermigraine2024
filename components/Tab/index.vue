@@ -10,31 +10,31 @@ const getImageUrl = name => {
 const tab2s = [
   {
     imgSrc: 'tab2-1.svg',
-    title: '壓力',
+    title: '壓力⁷',
     content: '長期的情緒壓力或壓力性事件，如工作壓力、家庭矛盾或情感問題，都可能觸發偏頭痛發作。',
     delay: '100',
   },
   {
     imgSrc: 'tab2-2.svg',
-    title: '特定食物',
+    title: '特定食物⁷',
     content: '某些食物或飲料可能成為偏頭痛的觸發因素，如巧克力、咖啡因、乳製品、酒精、某些添加劑或防腐劑等。',
     delay: '200',
   },
   {
     imgSrc: 'tab2-3.svg',
-    title: '過度使用藥物',
+    title: '過度使用藥物⁸',
     content: '長期或過量使用止痛藥或特定的藥物，如阿司匹林、布洛芬等，可能導致偏頭痛的增加頻率或嚴重程度。',
     delay: '300',
   },
   {
     imgSrc: 'tab2-4.svg',
-    title: '睡眠時間不規律',
-    content: '不規律的睡眠時間、睡眠不足或睡眠過度都可能導致生物鐘失調，增加偏頭痛發作的風險。',
+    title: '睡眠不佳⁷',
+    content: '',
     delay: '400',
   },
   {
     imgSrc: 'tab2-5.svg',
-    title: '三叉神經血管過度敏感',
+    title: '三叉神經血管過度敏感¹',
     content: '此理論認為疼痛的來源來自腦膜血管周邊的三叉神經末稍纖維，當這些神經纖維被活化後，會造成局部的神經性發炎，使得疼痛神經的末梢被更進一步的活化，三叉神經會釋放神經傳導物質讓疼痛訊息傳遞給大腦，其中CGRP又名抑鈣素相關基因胜肽，便是引發頭痛很重要的發炎物質。偏頭痛相關誘因會促使CGRP釋放、刺激三叉神經末梢，將訊號傳至腦幹、下視丘、視丘到頂葉而產生疼痛及相關症狀。',
     delay: '500',
   },
@@ -66,29 +66,29 @@ div#tab(class="imp_event" data-title="pfizermigraine2024" data-label="imp_sectio
           div(data-aos="fade-down" data-aos-delay="100")
             p.text-2xl.font-bold.text-custom-blue.mb-2
               span.text-custom-green.font-zen.pr-1 Q1.
-              | 什麼是偏頭痛？
+              | 什麼是偏頭痛？³
             .flex.p-0.items-start(class="md:p-4 md:flex-row")
               img.w-20.my-5(class="md:w-36" src="/assets/img/icons/tab1-1.svg")
               .content.text-xl.text-custom-grey-800.px-0.pl-4.text-justify(class="md:px-8")
                 p 偏頭痛是一種影響大腦、脊髓和身體其他部位神經的疾病，會導致頭部一側或雙側劇烈疼痛。發作時通常包括噁心、嘔吐、對光或聲音敏感等症狀。
-                p.text-custom-blue.font-bold.my-2 迷思：偏一邊頭痛才是偏頭痛？
+                p.text-custom-blue.font-bold.my-2 迷思：偏一邊頭痛才是偏頭痛？³
                 p 許多人一般認為只有在頭部的一側出現頭痛時才能稱之為「偏頭痛」，然而事實上，偏頭痛並非必然為單側頭痛，有時可能會出現雙側頭痛的情況。
           
           //- 2
           div(data-aos="fade-down" data-aos-delay="200")
             p.text-2xl.font-bold.text-custom-blue.mb-2.mt-8(class="lg:mt-0")
               span.text-custom-green.font-zen.pr-1 Q2.
-              | 男性和女性受到的影響相同嗎？
+              | 男性和女性受到的影響相同嗎？⁴
             .flex.p-0.items-start(class="md:p-4 md:flex-row")
               img.w-20.my-5(class="md:w-36" src="/assets/img/icons/tab1-2.svg")
               .content.text-xl.text-custom-grey-800.px-0.pl-4.text-justify(class="md:px-8")
-                p 整體而言，女性比男性更容易得到偏頭痛，比率約為3：1，而有四分之一的女性在一生中的某個時候都會遭受偏頭痛的困擾。
+                p 整體而言，女性比男性更容易得到偏頭痛，比率約為3：1。雖然原因不清楚，但可能和女性荷爾蒙有關。
 
           //- 3
           div(data-aos="fade-down" data-aos-delay="300")
             p.text-2xl.font-bold.text-custom-blue.mb-2.mt-8(class="lg:mt-0")
               span.text-custom-green.font-zen.pr-1 Q3.
-              | 偏頭痛會遺傳嗎？
+              | 偏頭痛會遺傳嗎？¹
             .flex.p-0.items-start(class="md:p-4 md:flex-row")
               img.w-20.my-5(class="md:w-36" src="/assets/img/icons/tab1-3.svg")
               .content.text-xl.text-custom-grey-800.px-0.pl-4.text-justify(class="md:px-8")
@@ -98,11 +98,13 @@ div#tab(class="imp_event" data-title="pfizermigraine2024" data-label="imp_sectio
           div(data-aos="fade-down" data-aos-delay="400")
             p.text-2xl.font-bold.text-custom-blue.mb-2.mt-8(class="lg:mt-0")
               span.text-custom-green.font-zen.pr-1 Q4.
-              | 在我的一生中，偏頭痛的頻率和嚴重程度會改變嗎？
+              | 在我的一生中，偏頭痛的頻率和嚴重程度會改變嗎？⁵
             .flex.p-0.items-start(class="md:p-4 md:flex-row")
               img.w-20.my-5(class="md:w-36" src="/assets/img/icons/tab1-4.svg")
               .content.text-xl.text-custom-grey-800.px-0.pl-4.text-justify(class="md:px-8")
-                p 隨著偏頭痛患者年齡的增長，偏頭痛發作可能會變得不那麼頻繁和嚴重。 他們對噪音、光線和氣味的敏感度也可能下降。
+                p 20 到 60 歲是偏頭痛盛行率的最高峰，幼童和老人發生偏頭痛的比例較低。
+                p 孩童時期的偏頭痛，一般而言比較輕微，也較容易有一些特殊症狀，例如腹痛、反覆嘔吐等，有時甚至沒有明顯的頭痛，導致診斷不易。
+                p 老年期的偏頭痛，特別是女性停經以後，一般而言發作頻率會下降。
 
           //- 5
           div(data-aos="fade-down" data-aos-delay="500")
@@ -118,11 +120,11 @@ div#tab(class="imp_event" data-title="pfizermigraine2024" data-label="imp_sectio
           div(data-aos="fade-down" data-aos-delay="600")
             p.text-2xl.font-bold.text-custom-blue.mb-2.mt-8(class="lg:mt-0")
               span.text-custom-green.font-zen.pr-1 Q6.
-              | 偏頭痛可以使用止痛藥治療嗎？
+              | 偏頭痛可以使用止痛藥治療嗎？⁶
             .flex.p-0.items-start(class="md:p-4 md:flex-row")
               img.w-20.my-5(class="md:w-36" src="/assets/img/icons/tab1-6.svg")
               .content.text-xl.text-custom-grey-800.px-0.pl-4.text-justify(class="md:px-8")
-                p 許多人在出現偏頭痛發作時會使用非處方的止痛藥，如布洛芬、阿司匹林或鎮痛劑，來緩解疼痛。但隨著時間一久會漸漸發現，藥效好像不夠了，需要增加到兩顆、三顆藥才能止住頭痛，而且頭痛越來越頻繁。因此常常使用止痛藥是治標不治本的方式，有可能誘發藥物濫用之頭痛，且止痛藥吃多了也可能傷身體，因此止痛藥並不能完全控制偏頭痛，可能需要其他治療方法，如服用偏頭痛專一性止痛藥物，CGRP 的血中濃度會降低，偏頭痛也同步改善。另外生活方式調整或規律的運動也有助於減輕偏頭痛的症狀。建議在使用任何治療前，諮詢您的專科醫師以獲得最適合您的建議。
+                p 許多人在出現偏頭痛發作時會使用非處方的止痛藥，如布洛芬、阿司匹林或鎮痛劑，來緩解疼痛。但隨著時間一久會漸漸發現，藥效好像不夠了，需要增加到兩顆、三顆藥才能止住頭痛，而且頭痛越來越頻繁⁶。因此常常使用止痛藥是治標不治本的方式，有可能誘發藥物濫用之頭痛，且止痛藥吃多了也可能傷身體，因此止痛藥並不能完全控制偏頭痛，可能需要其他治療方法，如服用偏頭痛專一性止痛藥物，CGRP 的血中濃度會降低，偏頭痛也同步改善⁶。另外生活方式調整或規律的運動也有助於減輕偏頭痛的症狀⁷。建議在使用任何治療前，諮詢您的專科醫師以獲得最適合您的建議。
 
       template(v-slot:偏頭痛成因)
         .flex.flex-nowrap.flex-col.justify-around(class="sm:flex-row sm:flex-wrap")
