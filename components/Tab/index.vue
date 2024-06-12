@@ -127,11 +127,20 @@ div#tab(class="imp_event" data-title="pfizermigraine2024" data-label="imp_sectio
                 p 許多人在出現偏頭痛發作時會使用非處方的止痛藥，如布洛芬、阿司匹林或鎮痛劑，來緩解疼痛。但隨著時間一久會漸漸發現，藥效好像不夠了，需要增加到兩顆、三顆藥才能止住頭痛，而且頭痛越來越頻繁⁶。因此常常使用止痛藥是治標不治本的方式，有可能誘發藥物濫用之頭痛，且止痛藥吃多了也可能傷身體，因此止痛藥並不能完全控制偏頭痛，可能需要其他治療方法，如服用偏頭痛專一性止痛藥物，CGRP 的血中濃度會降低，偏頭痛也同步改善⁶。另外生活方式調整或規律的運動也有助於減輕偏頭痛的症狀⁷。建議在使用任何治療前，諮詢您的專科醫師以獲得最適合您的建議。
 
       template(v-slot:偏頭痛成因)
-        .flex.flex-nowrap.flex-col.justify-around(class="sm:flex-row sm:flex-wrap")
-          div.text-center.mb-10(v-for="(tab2, index) in tab2s" :key="index" class="w-12/12 sm:w-6/12 lg:w-4/12" data-aos="fade-down" :data-aos-delay="tab2.delay")
-            img.mx-auto(:src="getImageUrl(tab2.imgSrc)" :alt="tab2.title")
-            p.bg-custom-blue.text-white.inline-block.px-4.py-1.text-2xl.rounded-full.my-4 {{ tab2.title }}
-            p.text-xl.text-custom-grey-800.text-justify.px-5 {{ tab2.content }}
+        .flex.flex-wrap
+          .grid.grid-cols-1.w-full(class="md:grid-cols-2 md:w-8/12")
+            div.text-center.mb-10(v-for="(tab2, index) in tab2s" :key="index" data-aos="fade-down" :data-aos-delay="tab2.delay")
+              template(v-if="index !== tab2s.length - 1")
+                img.mx-auto(:src="getImageUrl(tab2.imgSrc)" :alt="tab2.title")
+                p.bg-custom-blue.text-white.inline-block.px-4.py-1.text-2xl.rounded-full.my-4 {{ tab2.title }}
+                p.text-xl.text-custom-grey-800.text-justify.px-5 {{ tab2.content }}
+
+          .grid.grid-cols-1.w-full(class="md:w-4/12")
+            div.text-center.mb-10(data-aos="fade-down" :data-aos-delay="tab2s[4].delay")
+              img.mx-auto(:src="getImageUrl(tab2s[4].imgSrc)" :alt="tab2s[4].title")
+              p.bg-custom-blue.text-white.inline-block.px-4.py-1.text-2xl.rounded-full.my-4 {{ tab2s[4].title }}
+              p.text-xl.text-custom-grey-800.text-justify.px-5 {{ tab2s[4].content }}
+          
 
       template(v-slot:台灣現況)
         div.grid.grid-cols-1.gap-8(class="lg:grid-cols-2")
