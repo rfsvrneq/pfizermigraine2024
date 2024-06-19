@@ -1,123 +1,100 @@
 <script setup></script>
 
 <template lang="pug">
-div.text-sm.bg-custom-grey-500
-  #commonhealth_footer
-    .commonhealth_footer-channel
-      ul
-        li
-          a(href='https://www.commonhealth.com.tw/' target='_blank') 康健官網
-        li
-          a(href='https://www.commonhealth.com.tw/' target='_blank') 康健雜誌
-        li
-          a(href='https://www.commonhealth.com.tw/book/index.action' target='_blank') 康健出版
-        li
-          a(href='https://www.youtube.com/user/CommonHealthTV' target='_blank') 康健影音
-        li
-          a(href='https://line.me/ti/p/@commonhealth' target='_blank') 康健LINE
-        br
-        li
-          a(href='https://www.facebook.com/commonhealth/' target='_blank') 康健FB
-        li
-          a(href='https://kb.commonhealth.com.tw/' target='_blank') 康健知識庫
-        li
-          a(href='https://club.commonhealth.com.tw/' target='_blank') 大人社團
-        li
-          a(href='https://lohas.commonhealth.com.tw/' target='_blank') 樂活島
-    .commonhealth_footer-copyright
-      | Copyright © 2024 康健雜誌. All rights reserved. 
-      br
-      | 本網站內容受著作權保護，詳細請閱讀
-      a(href='https://www.commonhealth.com.tw/copyright ' target='_blank') 著作權聲明
-    
+footer.text-sm.bg-custom-grey-500
+  ul
+    li
+      a(href='https://www.commonhealth.com.tw/' target='_blank') 康健官網
+    li
+      a(href='https://www.commonhealth.com.tw/' target='_blank') 康健雜誌
+    li
+      a(href='https://www.commonhealth.com.tw/book/index.action' target='_blank') 康健出版
+    li
+      a(href='https://www.youtube.com/user/CommonHealthTV' target='_blank') 康健影音
+    li
+      a(href='https://kb.commonhealth.com.tw/' target='_blank') 康健知識庫
+    li
+      a(href='https://club.commonhealth.com.tw/' target='_blank') 大人社團
+    li
+      a(href='https://lohas.commonhealth.com.tw/' target='_blank') 樂活島
+  p Copyright © 2024 康健雜誌（天下生活出版股份有限公司）All rights reserved.
+  ul
+    li
+      a(href='https://www.commonhealth.com.tw/privacy_policy' target='_blank') 隱私權政策
+    li
+      a(href='https://www.commonhealth.com.tw/member/service_policy' target='_blank') 會員服務條款
+
 </template>
 
-<style scoped lang="sass">
-#commonhealth_footer
-  text-align: center
-  padding: 25px 0
+<style scoped>
+footer {
+  width: 100%;
+  padding: 30px 0;
+  color: #373737;
+  /* background: #fff; */
+}
+footer a{
+  transition: .3s;
+  text-decoration: none;
+}
+footer a:hover{
+  color: green;
+}
 
-.commonhealth_footer-channel
-  width: 100%
-  font-size: 0.9375rem
-  font-size: 15px
-  line-height: 1
-  text-align: center
-  margin-bottom: 5px
-  ul
-    margin: 0
-    padding: 0
-  li
-    display: inline-block
-    border-right: 1px solid #264964
-    padding-right: 12px
-    margin-right: 10px
-    margin-bottom: 10px
-    a
-      color: #264964
-      text-decoration: none
-      position: relative
-      &:after
-        content: ""
-        background-color: #264964
-        width: 0
-        height: 1px
-        position: absolute
-        left: 50%
-        bottom: -3px
-        display: inline-block
-        transition: .3s
-      &:hover:after
-        width: 100%
-        left: 0
-    &:last-child
-      border: none
-      margin-right: 0
-      padding-right: 0
-  a:hover
-    color: #264964
+footer ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
 
-.commonhealth_footer-copyright
-  color: #264964
-  font-size: 0.875rem
-  font-size: 14px
-  text-align: center
-  a
-    display: inline-block
-    border-bottom: 1px dotted white
-    padding-bottom: 1px
+footer ul li {
+  font-size: 15px;
+  line-height: 15px;
+  border-right: 1px solid #373737;
+  padding: 0 10px 0 0;
+  margin: 0 10px 10px 0;
+}
 
-.commonhealth_footer-channel br, .commonhealth_footer-copyright br
-  display: none
+footer ul li:last-child {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
 
-.uiGuideline-boxs
-  min-height: 80vh
+footer ul li a {
+  color: #373737;
+  line-height: 15px;
+}
 
-@media (max-width: 768px)
-  .commonhealth_footer-channel
-    font-size: 0.875rem
-    font-size: 14px
-    li
-      padding-right: 5px
-      margin-right: 3px
+footer ul:last-child {
+  margin: 0;
+}
 
-      &:nth-child(5)
-        border-right: 0
-        padding-right: 0
-        margin-right: 0
-  .commonhealth_footer-copyright
-    font-size: 0.8125rem
-    font-size: 13px
-    line-height: 1.5
-  .commonhealth_footer-channel br, .commonhealth_footer-copyright br
-    display: inline-block
-  /*Lite
-  .commonhealth_footer-channel.lite li:nth-child(4)
-    border-right: 0
-    padding-right: 0
-    margin-right: 0
-@media (max-width: 320px)
-  .commonhealth_footer-channel, .commonhealth_footer-copyright
-    font-size: 0.75rem
-    font-size: 12px
+footer p {
+  color: #373737;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  footer ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer ul li {
+    padding: 0 5px 0 0;
+    margin: 0 5px 10px 0;
+  }
+}
+                    
 </style>

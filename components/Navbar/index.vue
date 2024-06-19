@@ -53,7 +53,7 @@ div#topbar.w-full.fixed.top-0.left-0.h-16.z-20.bg-white.shadow-lg
     
     //- logo
     a.w-24.block(href="https://www.commonhealth.com.tw/", target="_blank") 
-      img.w-full(src="/assets/img/logo.png", alt="康健雜誌")
+      img.w-full(src="/assets/img/logo.svg", alt="康健雜誌")
 
     //- 漢堡
     a.burger-trigger(href="#", :class="{ 'active': burgerTrigger == true }", @click.prevent="burgerTrigger = !burgerTrigger")
