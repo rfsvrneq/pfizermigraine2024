@@ -4,25 +4,26 @@
 footer.text-sm.bg-custom-grey-500
   ul
     li
-      a(href='https://www.commonhealth.com.tw/' target='_blank') 康健官網
+      a(href='https://www.commonhealth.com.tw/' target='_blank') &#x5EB7;&#x5065;&#x5B98;&#x7DB2;
     li
-      a(href='https://www.commonhealth.com.tw/' target='_blank') 康健雜誌
+      a(href='https://www.commonhealth.com.tw/' target='_blank') &#x5EB7;&#x5065;&#x96DC;&#x8A8C;
     li
-      a(href='https://www.commonhealth.com.tw/book/index.action' target='_blank') 康健出版
+      a(href='https://www.commonhealth.com.tw/book/index.action' target='_blank') &#x5EB7;&#x5065;&#x51FA;&#x7248;
     li
-      a(href='https://www.youtube.com/user/CommonHealthTV' target='_blank') 康健影音
+      a(href='https://www.youtube.com/user/CommonHealthTV' target='_blank') &#x5EB7;&#x5065;&#x5F71;&#x97F3;
     li
-      a(href='https://kb.commonhealth.com.tw/' target='_blank') 康健知識庫
+      a(href='https://kb.commonhealth.com.tw/' target='_blank') &#x5EB7;&#x5065;&#x77E5;&#x8B58;&#x5EAB;
     li
-      a(href='https://club.commonhealth.com.tw/' target='_blank') 大人社團
+      a(href='https://club.commonhealth.com.tw/' target='_blank') &#x5927;&#x4EBA;&#x793E;&#x5718;
     li
-      a(href='https://lohas.commonhealth.com.tw/' target='_blank') 樂活島
-  p Copyright © 2024 康健雜誌（天下生活出版股份有限公司）All rights reserved.
+      a(href='https://cancer.commonhealth.com.tw/' target='_blank') &#x764C;&#x75C7;&#x554F;&#x5EB7;&#x5065;
+  p Copyright &copy; 2024 &#x5EB7;&#x5065;&#x96DC;&#x8A8C;&#xFF08;&#x5929;&#x4E0B;&#x751F;&#x6D3B;&#x51FA;&#x7248;&#x80A1;&#x4EFD;&#x6709;&#x9650;&#x516C;&#x53F8;&#xFF09;All rights reserved.
   ul
     li
-      a(href='https://www.commonhealth.com.tw/privacy_policy' target='_blank') 隱私權政策
+      a(href='https://www.commonhealth.com.tw/privacy_policy' target='_blank') &#x96B1;&#x79C1;&#x6B0A;&#x653F;&#x7B56;
     li
-      a(href='https://www.commonhealth.com.tw/member/service_policy' target='_blank') 會員服務條款
+      a(href='https://www.commonhealth.com.tw/member/service_policy' target='_blank') &#x6703;&#x54E1;&#x670D;&#x52D9;&#x689D;&#x6B3E;
+
 
 </template>
 
